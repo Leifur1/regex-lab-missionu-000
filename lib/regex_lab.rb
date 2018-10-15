@@ -18,11 +18,15 @@ end
 def first_word_capitalized_and_ends_with_punctuation?(text)
   if text.match(/^[A-Z].*\.$/) != nil
     return true
-  else 
+  else
     return false
   end
 end
 
 def valid_phone_number?(phone)
-
+  if text.scan(/\(?([0-9]{3})\)?([ -]?)([0-9]{3})([ -]?)([0-9]{4})/) != nil
+    return true
+  else
+    return false
+  end
 end
